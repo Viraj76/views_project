@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ViewsProject"
         tools:targetApi="31">
         <activity
+            android:name=".FirstActivityy"
+            android:exported="false" />
+        <activity
+            android:name=".FirstActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
