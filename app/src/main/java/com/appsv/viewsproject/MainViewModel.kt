@@ -20,14 +20,18 @@ class MainViewModel : ViewModel() {
         }
     }
 
+
     // This method is called when the ViewModel is destroyed
     override fun onCleared() {
         super.onCleared()
         // Cancel the coroutine job to avoid memory leaks
-        Log.d("TAGVIRAJ", "Viewmodel called 1")
+        Log.d("TAGVIRAJ", "Viewmodel 1:  OnCleared called")
         viewModelJob.cancel()
     }
 }
+
+
+
 class MainViewModel1 : ViewModel() {
     private val viewModelJob = SupervisorJob()
     private val viewModelScope = CoroutineScope(Dispatchers.Main + viewModelJob)

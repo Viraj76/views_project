@@ -13,7 +13,7 @@ class SecondFragment : Fragment() {
     // Called when the fragment is first created
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        Log.d("TAGVIRAJ", "SecondFragment onAttach called")
+        Log.d("TAGVIRAJ", "Fragment 2: onAttach called")
     }
 
     // Called to create the view hierarchy for this fragment
@@ -21,7 +21,7 @@ class SecondFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.d("TAGVIRAJ", "SecondFragment onCreateView called")
+        Log.d("TAGVIRAJ", "Fragment 2: onCreateView called")
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_second, container, false)
     }
@@ -29,36 +29,36 @@ class SecondFragment : Fragment() {
     // Called when the fragment's view hierarchy has been created
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.d("TAGVIRAJ", "SecondFragment onViewCreated called")
+        Log.d("TAGVIRAJ", "Fragment 2: onViewCreated called")
     }
 
     // Called when the fragment is visible to the user
     override fun onStart() {
         super.onStart()
-        Log.d("TAGVIRAJ", "SecondFragment onStart called")
+        Log.d("TAGVIRAJ", "Fragment 2: onStart called")
     }
 
     // Called when the fragment is no longer visible to the user
     override fun onStop() {
         super.onStop()
-        Log.d("TAGVIRAJ", "SecondFragment onStop called")
+        Log.d("TAGVIRAJ", "Fragment 2: onStop called")
     }
 
     // Called when the fragment's view is being destroyed
     override fun onDestroyView() {
         super.onDestroyView()
-        Log.d("TAGVIRAJ", "SecondFragment onDestroyView called")
+        Log.d("TAGVIRAJ", "Fragment 2: onDestroyView called")
     }
 
     // Called when the fragment itself is being destroyed
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("TAGVIRAJ", "SecondFragment onDestroy called")
+        Log.d("TAGVIRAJ", "Fragment 2: onDestroy called")
     }
 
     // Called when the fragment is no longer attached to its activity
     override fun onDetach() {
         super.onDetach()
-        Log.d("TAGVIRAJ", "SecondFragment onDetach called")
+        Log.d("TAGVIRAJ", "Fragment 2: onDetach called")
     }
 }
